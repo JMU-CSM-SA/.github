@@ -1,0 +1,46 @@
+name: Bug report
+description: Template for bug reports
+labels:
+  - bug
+body:
+  - type: textarea
+    attributes:
+      label: Description
+      description: A clear and concise description of the problem
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Minimal Reproduction
+      description: provide steps to reproduce the problem
+      placeholder: >-
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Screenshots and/or Errors
+      description: Provide error logs and/or screenshots if applicable
+  - type: dropdown
+    attributes:
+      label: Operating System
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Web Browser
+      options:
+        - Firefox
+        - Google Chrome
+        - Edge
+        - Safari
+        - Other Chromium-Based
+    validations:
+      required: true
